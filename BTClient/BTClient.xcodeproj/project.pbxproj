@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1410C4FF17869F230036668B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1410C4FE17869F230036668B /* UIKit.framework */; };
+		1410C50117869F230036668B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1410C50017869F230036668B /* Foundation.framework */; };
+		1410C50317869F230036668B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1410C50217869F230036668B /* CoreGraphics.framework */; };
+		1410C50917869F230036668B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1410C50717869F230036668B /* InfoPlist.strings */; };
+		1410C50B17869F230036668B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1410C50A17869F230036668B /* main.m */; };
+		1410C50F17869F230036668B /* BTClientAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1410C50E17869F230036668B /* BTClientAppDelegate.m */; };
+		1410C51117869F230036668B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1410C51017869F230036668B /* Default.png */; };
+		1410C51317869F230036668B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1410C51217869F230036668B /* Default@2x.png */; };
+		1410C51517869F230036668B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1410C51417869F230036668B /* Default-568h@2x.png */; };
+		1410C51817869F230036668B /* BTClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1410C51717869F230036668B /* BTClientViewController.m */; };
+		1410C51B17869F230036668B /* BTClientViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1410C51917869F230036668B /* BTClientViewController_iPhone.xib */; };
+		1410C51E17869F230036668B /* BTClientViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1410C51C17869F230036668B /* BTClientViewController_iPad.xib */; };
+		1410C52617869FD90036668B /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1410C52417869FD20036668B /* CoreBluetooth.framework */; };
+		14C3778817999AB000702411 /* BTClientManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 14C3778517999AB000702411 /* BTClientManager.mm */; };
+		14C3778917999AB000702411 /* ThreadUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 14C3778717999AB000702411 /* ThreadUtil.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1410C4FB17869F230036668B /* BTClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1410C4FE17869F230036668B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1410C50017869F230036668B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1410C50217869F230036668B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1410C50617869F230036668B /* BTClient-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BTClient-Info.plist"; sourceTree = "<group>"; };
+		1410C50817869F230036668B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1410C50A17869F230036668B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1410C50C17869F230036668B /* BTClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BTClient-Prefix.pch"; sourceTree = "<group>"; };
+		1410C50D17869F230036668B /* BTClientAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTClientAppDelegate.h; sourceTree = "<group>"; };
+		1410C50E17869F230036668B /* BTClientAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTClientAppDelegate.m; sourceTree = "<group>"; };
+		1410C51017869F230036668B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		1410C51217869F230036668B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		1410C51417869F230036668B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1410C51617869F230036668B /* BTClientViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTClientViewController.h; sourceTree = "<group>"; };
+		1410C51717869F230036668B /* BTClientViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTClientViewController.m; sourceTree = "<group>"; };
+		1410C51A17869F230036668B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BTClientViewController_iPhone.xib; sourceTree = "<group>"; };
+		1410C51D17869F230036668B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BTClientViewController_iPad.xib; sourceTree = "<group>"; };
+		1410C52417869FD20036668B /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		14C3778417999AA600702411 /* BTClientManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTClientManager.h; path = BTClient/BTClientManager/public/BTClientManager.h; sourceTree = "<group>"; };
+		14C3778517999AB000702411 /* BTClientManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = BTClientManager.mm; path = BTClient/BTClientManager/private/BTClientManager.mm; sourceTree = "<group>"; };
+		14C3778617999AB000702411 /* ThreadUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThreadUtil.h; path = BTClient/BTClientManager/private/ThreadUtil.h; sourceTree = "<group>"; };
+		14C3778717999AB000702411 /* ThreadUtil.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ThreadUtil.mm; path = BTClient/BTClientManager/private/ThreadUtil.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1410C4F817869F230036668B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1410C52617869FD90036668B /* CoreBluetooth.framework in Frameworks */,
+				1410C4FF17869F230036668B /* UIKit.framework in Frameworks */,
+				1410C50117869F230036668B /* Foundation.framework in Frameworks */,
+				1410C50317869F230036668B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1410C4F217869F230036668B = {
+			isa = PBXGroup;
+			children = (
+				14C3778117999A8B00702411 /* BTClientManager */,
+				1410C50417869F230036668B /* BTClient */,
+				1410C4FD17869F230036668B /* Frameworks */,
+				1410C4FC17869F230036668B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1410C4FC17869F230036668B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1410C4FB17869F230036668B /* BTClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1410C4FD17869F230036668B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1410C52417869FD20036668B /* CoreBluetooth.framework */,
+				1410C4FE17869F230036668B /* UIKit.framework */,
+				1410C50017869F230036668B /* Foundation.framework */,
+				1410C50217869F230036668B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1410C50417869F230036668B /* BTClient */ = {
+			isa = PBXGroup;
+			children = (
+				1410C50D17869F230036668B /* BTClientAppDelegate.h */,
+				1410C50E17869F230036668B /* BTClientAppDelegate.m */,
+				1410C51617869F230036668B /* BTClientViewController.h */,
+				1410C51717869F230036668B /* BTClientViewController.m */,
+				1410C51917869F230036668B /* BTClientViewController_iPhone.xib */,
+				1410C51C17869F230036668B /* BTClientViewController_iPad.xib */,
+				1410C50517869F230036668B /* Supporting Files */,
+			);
+			path = BTClient;
+			sourceTree = "<group>";
+		};
+		1410C50517869F230036668B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1410C50617869F230036668B /* BTClient-Info.plist */,
+				1410C50717869F230036668B /* InfoPlist.strings */,
+				1410C50A17869F230036668B /* main.m */,
+				1410C50C17869F230036668B /* BTClient-Prefix.pch */,
+				1410C51017869F230036668B /* Default.png */,
+				1410C51217869F230036668B /* Default@2x.png */,
+				1410C51417869F230036668B /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14C3778117999A8B00702411 /* BTClientManager */ = {
+			isa = PBXGroup;
+			children = (
+				14C3778317999A9900702411 /* public */,
+				14C3778217999A9300702411 /* private */,
+			);
+			name = BTClientManager;
+			sourceTree = "<group>";
+		};
+		14C3778217999A9300702411 /* private */ = {
+			isa = PBXGroup;
+			children = (
+				14C3778517999AB000702411 /* BTClientManager.mm */,
+				14C3778617999AB000702411 /* ThreadUtil.h */,
+				14C3778717999AB000702411 /* ThreadUtil.mm */,
+			);
+			name = private;
+			sourceTree = "<group>";
+		};
+		14C3778317999A9900702411 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				14C3778417999AA600702411 /* BTClientManager.h */,
+			);
+			name = public;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1410C4FA17869F230036668B /* BTClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1410C52117869F230036668B /* Build configuration list for PBXNativeTarget "BTClient" */;
+			buildPhases = (
+				1410C4F717869F230036668B /* Sources */,
+				1410C4F817869F230036668B /* Frameworks */,
+				1410C4F917869F230036668B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BTClient;
+			productName = BTClient;
+			productReference = 1410C4FB17869F230036668B /* BTClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1410C4F317869F230036668B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BTClient;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Alexander Mandravin";
+			};
+			buildConfigurationList = 1410C4F617869F230036668B /* Build configuration list for PBXProject "BTClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1410C4F217869F230036668B;
+			productRefGroup = 1410C4FC17869F230036668B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1410C4FA17869F230036668B /* BTClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1410C4F917869F230036668B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1410C50917869F230036668B /* InfoPlist.strings in Resources */,
+				1410C51117869F230036668B /* Default.png in Resources */,
+				1410C51317869F230036668B /* Default@2x.png in Resources */,
+				1410C51517869F230036668B /* Default-568h@2x.png in Resources */,
+				1410C51B17869F230036668B /* BTClientViewController_iPhone.xib in Resources */,
+				1410C51E17869F230036668B /* BTClientViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1410C4F717869F230036668B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1410C50B17869F230036668B /* main.m in Sources */,
+				1410C50F17869F230036668B /* BTClientAppDelegate.m in Sources */,
+				1410C51817869F230036668B /* BTClientViewController.m in Sources */,
+				14C3778817999AB000702411 /* BTClientManager.mm in Sources */,
+				14C3778917999AB000702411 /* ThreadUtil.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1410C50717869F230036668B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1410C50817869F230036668B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1410C51917869F230036668B /* BTClientViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1410C51A17869F230036668B /* en */,
+			);
+			name = BTClientViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		1410C51C17869F230036668B /* BTClientViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1410C51D17869F230036668B /* en */,
+			);
+			name = BTClientViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1410C51F17869F230036668B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1410C52017869F230036668B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1410C52217869F230036668B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BTClient/BTClient-Prefix.pch";
+				INFOPLIST_FILE = "BTClient/BTClient-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1410C52317869F230036668B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BTClient/BTClient-Prefix.pch";
+				INFOPLIST_FILE = "BTClient/BTClient-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1410C4F617869F230036668B /* Build configuration list for PBXProject "BTClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1410C51F17869F230036668B /* Debug */,
+				1410C52017869F230036668B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1410C52117869F230036668B /* Build configuration list for PBXNativeTarget "BTClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1410C52217869F230036668B /* Debug */,
+				1410C52317869F230036668B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1410C4F317869F230036668B /* Project object */;
+}
