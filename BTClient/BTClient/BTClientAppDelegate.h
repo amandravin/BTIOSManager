@@ -33,7 +33,10 @@
 #import "BTClientViewController.h"
 
 
-@interface BTClientAppDelegate : UIResponder <UIApplicationDelegate, BTClientManagerDelegate, BTClientViewControllerDelegate, BTServerDelegate>
+@interface BTClientAppDelegate : UIResponder <UIApplicationDelegate,
+                                              BTClientManagerDelegate,
+                                              BTClientViewControllerDelegate,
+                                              BTServerDelegate>
 {
     BTClientManager*     m_btClientManager;
     BTServer*            m_server;

@@ -74,18 +74,18 @@ while(0);                                                                       
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
     {
         self.viewController = [[[BTClientViewController alloc] initWithNibName:@"BTClientViewController_iPhone" bundle:nil] autorelease];
-    } else
+    }
+    else
     {
         self.viewController = [[[BTClientViewController alloc] initWithNibName:@"BTClientViewController_iPad" bundle:nil] autorelease];
     }
 
-    [_viewController setDelegate:self];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
 
     DLog(@"application:didFinishLaunchingWithOptions");
 
-    [UIApplication sharedApplication].idleTimerDisabled = YES;
+    [_viewController setDelegate:self];
     [_viewController enableSendTextField:NO];
 
     [BTClientManager setCustomLoggerBlock: ^(NSString* message)
